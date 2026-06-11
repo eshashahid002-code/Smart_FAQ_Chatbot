@@ -1,64 +1,53 @@
-# 🤖 FAQ Chatbot
+🤖 FAQ Chatbot
+A simple AI-like FAQ Chatbot built using HTML, CSS, and JavaScript.
+It answers user questions using a smart ranking-based matching system and also supports voice input.
+🚀 Features
+💬 Smart FAQ matching system (rank-based logic)
+🎤 Voice input support (Speech to Text)
+⌨️ Enter key support for sending messages
+🤖 Auto responses based on user questions
+📱 Responsive and modern UI design
+⚡ Lightweight and fast (no libraries needed)
+🛠️ Technologies Used
+HTML5
+CSS3
+JavaScript (Vanilla JS)
+📂 Project Structure
 
-A simple and interactive FAQ Chatbot built using HTML, CSS, and JavaScript. The chatbot answers user questions by matching them with predefined FAQs using a basic similarity matching algorithm.
+FAQ-Chatbot/
+│
+├── index.html      # Main UI of chatbot
+├── app.js          # Chatbot logic (FAQ + AI matching)
+└── README.md       # Project documentation
+📌 How It Works
+User types a question in the input box
+The system cleans and processes the text
+It compares input with FAQ dataset using ranking-based similarity
+The best matching answer is shown
+If no match is found, a default reply is shown
+🎤 Voice Feature
+Click the 🎤 Speak button and talk directly.
+Your speech will be converted into text automatically and answered by the chatbot.
+📸 Preview
+(You can add screenshot here later)
 
-## 🚀 Features
+Add screenshot of your chatbot UI in GitHub repo
+🚀 How to Run
+Download or clone the repository
+Open index.html in any browser
+Start chatting with the bot 🤖
+🌐 Live Demo (Optional)
 
-* Interactive chatbot interface
-* FAQ-based automatic responses
-* Smart text matching using similarity scoring
-* Clean and responsive design
-* Fast and lightweight
-* Beginner-friendly JavaScript project
-
-## 🛠️ Technologies Used
-
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS)
-
-## 📂 Project Structure
-
-├── index.html
-├── app.js
-└── README.md
-
-## ⚙️ How It Works
-
-1. User enters a question.
-2. The chatbot cleans and processes the input text.
-3. A similarity algorithm compares the question with stored FAQs.
-4. The most relevant answer is displayed in the chat window.
-5. If no suitable match is found, a default response is shown.
-
-## 📋 Sample Questions
-
-* What is translator?
-* What is OCR?
-* What is voice input?
-* How to translate?
-
-## 🚀 How to Run
-
-1. Download or clone this repository.
-2. Open the project folder.
-3. Run `index.html` in any web browser.
-4. Start asking questions in the chatbot.
-
-## 🎯 Future Improvements
-
-* Add more FAQs
-* Integrate AI-based responses
-* Support multiple languages
-* Voice input support
-* Database integration
-
-## 👩‍💻 Author
-
-**Esha Shahid**
-
-BS Computer Science Student
-
-## 📜 License
-
-This project is developed for learning and internship purposes. Feel free to use and modify it.
+Add GitHub Pages link here after deployment
+Example:
+https://yourusername.github.io/faq-chatbot/
+📈 Future Improvements
+Add AI API (ChatGPT integration)
+Improve natural language understanding
+Add database for storing chats
+Multi-language support
+👩‍💻 Author
+Esha Shahid
+BSCS Student | Aspiring AI Developer
+📜 License
+This project is for educational and internship purposes.
