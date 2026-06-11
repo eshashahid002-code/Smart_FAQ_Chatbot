@@ -4,10 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>FAQ Chatbot</title>
+<title>Smart FAQ Chatbot</title>
 
 <style>
-
 body{
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg,#07122f,#133c8b);
@@ -30,7 +29,6 @@ body{
 
 h1{
     text-align:center;
-    margin-bottom:20px;
 }
 
 #chatbox{
@@ -39,8 +37,7 @@ h1{
     background:rgba(0,0,0,0.2);
     padding:15px;
     border-radius:10px;
-    margin-bottom:15px;
-    text-align:left;
+    margin-bottom:10px;
 }
 
 input{
@@ -49,7 +46,6 @@ input{
     border:none;
     border-radius:10px;
     margin-bottom:10px;
-    box-sizing:border-box;
 }
 
 button{
@@ -66,7 +62,6 @@ button{
 button:hover{
     background:#0ea5e9;
 }
-
 </style>
 </head>
 
@@ -74,17 +69,15 @@ button:hover{
 
 <div class="container">
 
-<h1>🤖 FAQ Chatbot</h1>
+<h1>🤖 Smart FAQ Chatbot</h1>
 
 <div id="chatbox"></div>
 
-<input
-id="userInput"
-placeholder="Ask a question...">
+<input id="userInput" placeholder="Ask a question...">
 
-<button onclick="sendMessage()">
-Send
-</button>
+<button onclick="sendMessage()">Send</button>
+
+<button onclick="startVoice()">🎤 Speak</button>
 
 </div>
 
