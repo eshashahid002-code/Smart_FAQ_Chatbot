@@ -9,16 +9,29 @@ const faqs = [
     { q: ["how to translate"], a: "Enter text and click the translate button." }
 ];
 
-// ================= CLEAN TEXT =================
+// ================= CLEAN FUNCTION =================
 
 function clean(text) {
     return text
         .toLowerCase()
         .replace(/[^\w\s]/g, "")
+        .replace(/\s+/g, " ")
         .trim();
 }
 
-// ================= RANKED MATCH SYSTEM =================
+// ================= SIMILARITY ENGINE =================
+
+function similarity(a, b) {
+
+    let A = a.split(" ");
+    let B = b.split(" ");
+
+    let match = A.filter(word => B.includes(word));
+
+    return match.length / Math.max(A.length, B.length);
+}
+
+// ================= SMART RANKED MATCH =================
 
 function getBestMatch(input) {
 
@@ -35,7 +48,8 @@ function getBestMatch(input) {
 
             let score = similarity(userInput, key);
 
-            if (score > bestScore) {
+            // ✅ only accept strong match
+            if (score > bestScore && score >= 0.5) {
                 bestScore = score;
                 bestAnswer = item.a;
             }
@@ -43,24 +57,7 @@ function getBestMatch(input) {
 
     });
 
-    // strict filter (no wrong answers)
-    if (bestScore < 0.4) {
-        return "Sorry, I don't understand that yet. Try asking differently 😊";
-    }
-
     return bestAnswer;
-}
-
-// ================= SIMILARITY =================
-
-function similarity(a, b) {
-
-    let A = a.split(" ");
-    let B = b.split(" ");
-
-    let match = A.filter(word => B.includes(word));
-
-    return match.length / Math.max(A.length, B.length);
 }
 
 // ================= CHAT UI =================
